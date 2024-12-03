@@ -14,7 +14,6 @@ import { Button } from "@/components/Button";
 import { Orbit } from "@/components/Orbit";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
-import { Logo } from "@/components/Logo";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -108,9 +107,9 @@ export const Features = () => {
                   <div className="absolute-center">
                     <Orbit className="size-full" />
                   </div>
-                  <div className="absolute-center">
+                  {/* <div className="absolute-center">
                     <Logo className="size-24"/>
-                  </div>
+                  </div> */}
                   {logos.map(({src, alt, rotate}) => (
                     // Rotación de los logos
                     <motion.div 
